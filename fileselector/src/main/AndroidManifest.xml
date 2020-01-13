@@ -1,2 +1,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhoug.fileselector" />
+    package="com.zhoug.fileselector" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+        <!--配置FileProvider-->
+        <provider
+            android:name="com.zhoug.fileselector.FileProvider"
+            android:authorities="com.zhoug.fileselector.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileselector_file_path" />
+        </provider>
+
+        <activity android:name=".selector.ui.FileSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fileselector_AppTheme"
+            />
+        <activity android:name=".looker.FileLookerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fileselector_AppTheme"
+            />
+    </application>
+</manifest>

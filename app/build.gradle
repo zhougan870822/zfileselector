@@ -32,4 +32,7 @@ dependencies {
     implementation rootProject.ext.android["support-v4"]
 
     implementation project(':fileselector')
+    implementation rootProject.ext.dependencies["zcommon"]
+
+
 }

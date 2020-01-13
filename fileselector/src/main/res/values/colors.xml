@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fileselector_colorPrimary">#555555</color>
+    <color name="fileselector_colorPrimaryDark">#555555</color>
+
+    <color name="fileselector_file_looker_bg">#aa000000</color>
+    <color name="fileselector_folder_bg_normal">#ffffff</color>
+    <color name="fileselector_folder_bg_selected">#dddddd</color>
+    <color name="fileselector_picture_item_bg">#aaaaaa</color>
+    <color name="fileselector_white">#ffffff</color>
+    <color name="fileselector_page_bg">@color/fileselector_colorPrimary</color>
+
+
+
+
+</resources>

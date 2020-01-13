@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.zhoug'
 android {
     compileSdkVersion COMPILE_SDK_VERSION
 
@@ -20,7 +21,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
+    resourcePrefix "fileselector_"
 }
 
 dependencies {
@@ -33,6 +39,10 @@ dependencies {
     implementation rootProject.ext.android["constraint-layout"]
     implementation rootProject.ext.android["design"]
 
-    implementation 'com.github.zhougan870822:zcommon:1.0.1'
-    implementation 'com.github.zhougan870822:zwidget:1.0.1'
+    implementation rootProject.ext.dependencies["zcommon"]
+    implementation rootProject.ext.dependencies["zwidget"]
+    //视频播放
+    implementation rootProject.ext.dependencies["exoplayer"]
+    //图片查看
+    implementation rootProject.ext.dependencies["PhotoView"]
 }

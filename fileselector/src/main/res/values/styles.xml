@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName"
+    >
+
+    <!-- Base application theme. -->
+    <style name="fileselector_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/fileselector_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/fileselector_colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--进度条样式-->
+    <style name="fileselector_progress_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateDrawable">@drawable/fileselector_def_progress</item>
+    </style>
+
+</resources>

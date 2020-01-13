@@ -41,21 +41,21 @@ ext {
 
     projects = [
             //android通用
-            "android-com.zhoug.common" : ':android-lib:android-com.zhoug.common',
-            "permission"     : ':android-lib:permission',
-            "android-widgets": ':android-lib:android-widgets',
-            "applifecycle"   : ':android-lib:lifecycle',
+            "android-com.zhoug.common": ':android-lib:android-com.zhoug.common',
+            "permission"              : ':android-lib:permission',
+            "android-widgets"         : ':android-lib:android-widgets',
+            "applifecycle"            : ':android-lib:lifecycle',
             //base-lib
-            "arouter"        : ':base-lib:arouter',
-            "resourceslib"   : ':base-lib:resourceslib',
-            "libzxing"       : ':base-lib:libzxing',
-            "libshare"       : ':base-lib:libshare',
+            "arouter"                 : ':base-lib:arouter',
+            "resourceslib"            : ':base-lib:resourceslib',
+            "libzxing"                : ':base-lib:libzxing',
+            "libshare"                : ':base-lib:libshare',
 
             //业务组件
-            "baselibrary"    : ':baselibrary',
-            "module_my"      : ':module_my',
-            "module_home"    : ':module_home',
-            "module_firm"    : ':module_firm',
+            "baselibrary"             : ':baselibrary',
+            "module_my"               : ':module_my',
+            "module_home"             : ':module_home',
+            "module_firm"             : ':module_firm',
 
 
     ]
@@ -126,6 +126,8 @@ ext {
             "PhotoView"                         : "com.github.chrisbanes:PhotoView:2.0.0",
             //JSON框架
             "gson"                              : "com.google.code.gson:gson:2.8.5",
+            "zcommon"                           : "com.github.zhougan870822:zcommon:1.0.2",
+            "zwidget"                           : "com.github.zhougan870822:zwidget:1.0.1",
 
     ]
 

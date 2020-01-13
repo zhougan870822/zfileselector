@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fileselector_title_size">16sp</dimen>
+    <dimen name="fileselector_file_gride_divider">2dp</dimen>
+
+</resources>
