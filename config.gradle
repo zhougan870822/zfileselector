@@ -1,0 +1,133 @@
+ext {
+    COMPILE_SDK_VERSION = 27
+    TARGET_SDK_VERSION = 27
+    MIN_SDK_VERSION = 19
+
+    SUPPORT_VERSION = "27.1.1"
+
+    ROOM_VERSION = "1.1.1"//room版本号
+    DAGGER_VERSION = "2.17"//dagger 版本号
+
+    android = [
+            "junit"                   : 'junit:junit:4.12',
+            "runner"                  : 'com.android.support.test:runner:1.0.2',
+            "espresso-core"           : 'com.android.support.test.espresso:espresso-core:3.0.2',
+            "constraint-layout"       : "com.android.support.constraint:constraint-layout:1.1.3",
+            "appcompat-v7"            : "com.android.support:appcompat-v7:${SUPPORT_VERSION}",
+            "support-v4"              : "com.android.support:support-v4:${SUPPORT_VERSION}",
+            "design"                  : "com.android.support:design:${SUPPORT_VERSION}",
+            "multidex"                : "com.android.support:multidex:1.0.3",
+            "support-annotations"     : "com.android.support:support-annotations:27.0.0'",
+            "room-runtime"            : "android.arch.persistence.room:runtime:${ROOM_VERSION}",
+            "room-compiler"           : "android.arch.persistence.room:compiler:${ROOM_VERSION}",
+            "room-rxjava2"            : "android.arch.persistence.room:rxjava2:${ROOM_VERSION}",
+            "room-testing"            : "android.arch.persistence.room:testing:${ROOM_VERSION}",
+            //Lifecycles库 support library 26.1.0后已经包含了lifecycle
+            "lifecycle-runtime"       : "android.arch.lifecycle:runtime:1.0.3",
+            "lifecycle-compiler"      : "android.arch.lifecycle:compiler:1.0.0",
+            //ViewModel和 LiveData库
+            "extensions"              : "android.arch.lifecycle:extensions:1.1.0",
+            //依赖注入dagger
+            "dagger"                  : "com.google.dagger:dagger:${DAGGER_VERSION}",
+            "dagger-android"          : "com.google.dagger:dagger-android:${DAGGER_VERSION}",
+            "dagger-android-support"  : "com.google.dagger:dagger-android-support:${DAGGER_VERSION}",
+            "dagger-compiler"         : "com.google.dagger:dagger-compiler:${DAGGER_VERSION}",
+            "dagger-android-processor": "com.google.dagger:dagger-android-processor:${DAGGER_VERSION}",
+
+
+    ]
+
+
+
+    projects = [
+            //android通用
+            "android-com.zhoug.common" : ':android-lib:android-com.zhoug.common',
+            "permission"     : ':android-lib:permission',
+            "android-widgets": ':android-lib:android-widgets',
+            "applifecycle"   : ':android-lib:lifecycle',
+            //base-lib
+            "arouter"        : ':base-lib:arouter',
+            "resourceslib"   : ':base-lib:resourceslib',
+            "libzxing"       : ':base-lib:libzxing',
+            "libshare"       : ':base-lib:libshare',
+
+            //业务组件
+            "baselibrary"    : ':baselibrary',
+            "module_my"      : ':module_my',
+            "module_home"    : ':module_home',
+            "module_firm"    : ':module_firm',
+
+
+    ]
+
+
+
+
+    dependencies = [
+            //相机管理
+//            "android-com.zhoug.common"                    : "com.github.zhougan870822:android-com.zhoug.common:1.0.2",
+//            "permission"                        : "com.github.zhougan870822:permission:1.0.1",
+//            "zcamera"                           : "com.github.zhougan870822:zcamera:1.0.3",
+            //rtmp直播推流框架
+//            "WSLiveDemo"                        : "com.github.WangShuo1143368701:WSLiveDemo:v1.7",
+
+            //View注入框架
+//            "butterknife"                       : "com.jakewharton:butterknife:8.8.1",
+//            "butterknife-compiler"              : "com.jakewharton:butterknife-compiler:8.8.1",
+
+            //图片轮播框架
+            "banner"                            : "com.youth.banner:banner:1.4.9",
+            //组件间通信
+            "eventbus"                          : "org.greenrobot:eventbus:3.1.1",
+
+            "arouter-api"                       : "com.alibaba:arouter-api:1.4.1",
+            "arouter-compiler"                  : "com.alibaba:arouter-compiler:1.2.2",
+
+            //glide图片加载框架
+            "glide"                             : "com.github.bumptech.glide:glide:4.5.0",
+            "glide:compiler"                    : "com.github.bumptech.glide:compiler:4.5.0",
+
+            //rxjava2
+            "rxjava2:rxjava"                    : "io.reactivex.rxjava2:rxjava:2.1.1",
+            "rxjava2:rxandroid"                 : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            //rxjava
+//            "rxjava"                            : "io.reactivex:rxjava:1.1.0",
+//            "rxandroid"                         : "io.reactivex:rxandroid:1.1.0",
+
+            //处理rajava内存泄漏
+            "autodispose"                       : "com.uber.autodispose:autodispose:0.7.0",
+            "autodispose-android-archcomponents": "com.uber.autodispose:autodispose-android-archcomponents:0.7.0",
+            //retrofit2
+            "retrofit2:retrofit"                : "com.squareup.retrofit2:retrofit:2.3.0",
+            "retrofit2:adapter-rxjava2"         : "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+//            "retrofit2-adapter-rxjava"                    : "com.squareup.retrofit2:adapter-rxjava:2.1.0",
+            "retrofit2:converter-gson"          : "com.squareup.retrofit2:converter-gson:2.3.0",
+            "okhttp3:logging-interceptor"       : "com.squareup.okhttp3:logging-interceptor:3.8.1",
+
+            //数据库框架
+//            "greendao"                          : "org.greenrobot:greendao:3.2.2",
+
+            //日历控件
+            "material-calendarview"             : "com.prolificinteractive:material-calendarview:1.4.2",
+
+            //扫描框架
+            "zxing"                             : "com.google.zxing:core:3.3.0",
+
+            //文件选择框架
+            "picture_library"                   : "com.github.LuckSiege.PictureSelector:picture_library:v2.2.3",
+
+            //视频播放器
+            "exoplayer"                         : "com.google.android.exoplayer:exoplayer:2.9.3",
+
+            //webrtc p2p直播
+            "google-webrtc"                     : "org.webrtc:google-webrtc:1.0.26131",
+            "socket.io-client"                  : "io.socket:socket.io-client:0.8.3",
+            //
+            "PhotoView"                         : "com.github.chrisbanes:PhotoView:2.0.0",
+            //JSON框架
+            "gson"                              : "com.google.code.gson:gson:2.8.5",
+
+    ]
+
+}
+
