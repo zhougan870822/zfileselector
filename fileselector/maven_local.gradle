@@ -1,0 +1,9 @@
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = '1.0.1'//maven库的版本号，初始版本都从1.0.0开始
+        pom.artifactId = 'fileselector'//maven库的id，通常为业务模块名，为了与远程库区分，本地库请加local后缀；
+        pom.groupId = 'com.zhoug'//maven库的组，你自己统一定义；
+        repository(url: "file:///E:/localMaven")//本地仓库的地址
+    }
+}
